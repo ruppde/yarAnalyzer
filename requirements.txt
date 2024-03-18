@@ -1,2 +1,3 @@
 prettytable
 yara-python
+scandir

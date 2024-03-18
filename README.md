@@ -33,30 +33,32 @@ CSV Output in Excel
 # Usage
 
 ```
-usage: yarAnalyzer.py [-h] [-p path] [-s sigpath] [-e ext] [-i identifier]
-                      [-m max-size] [-l max-string] [-f first-bytes]
-                      [-o output] [--excel] [--noempty] [--inventory]
+usage: yarAnalyzer.py [-h] [-p path] [-s sigpath] [-e ext] [-i identifier] 
+                      [-m max-size] [-l max-string] [-f first-bytes] [-o output] 
+                      [-t output-samples] [--excel] [--noempty] [--inventory] 
                       [--printAll] [--debug]
 
 yarAnalyzer - Yara Rules Statistics and Analysis
 
-optional arguments:
-  -h, --help      show this help message and exit
-  -p path         Path to scan
-  -s sigpath      Path to signature file(s)
-  -e ext          signature extension
-  -i identifier   Set an identifier - will be used in filename
-                  identifier_rule_stats.csv and identifier_file_stats.csv
-  -m max-size     Max file size in MB (default=10)
-  -l max-string   Max filename/rulename string length in command line output
-  -f first-bytes  Number of first bytes to show in output
-  -o output       Inventory output
-  --excel         Add extras to suppress automatic conversion in Microsoft
-                  Excel
-  --noempty       Don't show empty values
-  --inventory     Create a YARA rule inventory only
-  --printAll      Print all files that are scanned
-  --debug         Debug output
+options:
+  -h, --help         show this help message and exit
+  -p path            Path with samples files
+  -s sigpath         Path to signature file(s)
+  -e ext             signature extension
+  -i identifier      Set an identifier - will be used in filename 
+                     identifier_rule_stats.csv and identifier_file_stats.csv
+  -m max-size        Max file size in MB (default=10)
+  -l max-string      Max filename/rulename string length in command line output
+  -f first-bytes     Number of first bytes to show in output
+  -o output          Inventory output
+  -t output-samples  Target directory to which samples without matches should be 
+                     copied
+  --excel            Add extras to suppress automatic conversion in Microsoft 
+                     Excel
+  --noempty          Don't show empty values
+  --inventory        Create a YARA rule inventory only
+  --printAll         Print all files that are scanned
+  --debug            Debug output
   
 ```
 
