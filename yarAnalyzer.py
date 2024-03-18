@@ -236,6 +236,8 @@ def initialize_yara_rules(rule_path, rules_extension):
                                     'filetype': dummy,
                                     'id': dummy,
                                     'md5': dummy,
+                                    'owner': dummy,
+                                    'filemode': 0,
                                 })
 
                                 # Yara Rule Info - used for inventory
